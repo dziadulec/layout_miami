@@ -1,0 +1,35 @@
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 8% 0;
+
+  &__logo{
+    width: 130px;
+  }
+
+  &__buttons{
+    gap: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon{
+    width: 18px;
+    padding: 6px;
+  }
+
+  &__icon--burger {
+    background-image: url('/src/images/menu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+
+
+    &:hover{
+      background-image: url('/src/images/menu_hover.svg');
+    }
+  }
+
+
+}

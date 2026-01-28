@@ -1,7 +1,9 @@
-@import 'utils';
-@import 'fonts';
-@import 'typography';
+@use 'blocks/reset';
+@use 'utils/vars';
+@use 'blocks/title';
+@use 'blocks/navigaction';
 
 body {
-  background: $c-gray;
+  background: black;
+  color: white;
 }
