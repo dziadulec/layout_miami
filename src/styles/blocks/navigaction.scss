@@ -1,7 +1,7 @@
 .navigation{
   display: flex;
   justify-content: space-between;
-  padding: 24px 8% 0;
+  padding: 24px 20px 0;
 
   &__logo{
     width: 130px;
@@ -16,6 +16,8 @@
   &__icon{
     width: 18px;
     padding: 6px;
+    box-sizing: border-box;
+    position: relative; // 🔥 TO JEST KLUCZ display: inline-block;
   }
 
   &__icon--burger {
@@ -25,11 +27,71 @@
     background-size: contain;
     cursor: pointer;
 
-
     &:hover{
       background-image: url('/src/images/menu_hover.svg');
     }
   }
 
+  &__icon--phone {
+    background-image: url('/src/images/phone.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+  }
 
+
+
+}
+
+
+
+
+  @media screen and (min-width: 744px) {
+  .navigation{
+    padding: 36px 72px 0;
+
+    &__logo{
+      width: 187px;
+    }
+
+    &__buttons{
+      gap: 32px;
+    }
+
+    &__icon{
+      width: 24px;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    &__icon--phone::after {
+      content: "+1 234 555-55-55";
+      position: absolute;
+      left: -140px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      font-size: 14px;
+      visibility: hidden;
+    }
+
+  &__icon--phone:hover::after {
+  visibility: visible
+  }
+
+
+
+  }
+}
+
+
+  @media screen and (min-width: 1260px) {
+  .navigation{
+    padding: 36px 120px 0;
+
+    &__buttons{
+      gap: 32px;
+    }
+  }
 }
