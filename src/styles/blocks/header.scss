@@ -1,17 +1,17 @@
 .header{
   min-height: 100vh;
-  background-image: url("../images/photos/MyBike_general.jpg");
+  background-image: url("../images/photos/MyBike_general_mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 90% center;
+  background-position: right center;
   background-size: cover;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-@media screen and (min-width: 744) {
+@media screen and (min-width: 744px) {
   .header{
     background-position:center center;
+    background-image: url("../images/photos/MyBike_general.jpg")
   }
 }
