@@ -16,8 +16,13 @@
 @use '../styles/blocks/footer.scss';
 @use '../styles/blocks/image.scss';
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: $color-bg;
+  background: $color_black;
   font-family: Poppins, Arial, sans-serif;
   color: $color_white;
 }
