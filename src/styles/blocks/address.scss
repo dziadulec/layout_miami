@@ -20,5 +20,14 @@
     padding-top: 10px;
     text-decoration: none;
     color: $color_white;
+
+    &:hover {
+      border-bottom: 1px solid $color_white;
+      color: $color_menu_bg;
+    }
+
+
+
+
   }
 }
