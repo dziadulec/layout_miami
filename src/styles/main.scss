@@ -1,9 +1,23 @@
-@use 'blocks/reset';
-@use 'utils/vars';
-@use 'blocks/title';
-@use 'blocks/navigaction';
+@use '../styles/utils/vars.scss' as *;
+@use '../styles/blocks/reset.scss';
+@use '../styles/blocks/address.scss';
+@use '../styles/blocks/bike.scss';
+@use '../styles/blocks/bikes.scss';
+@use '../styles/blocks/button.scss';
+@use '../styles/blocks/contact.scss';
+@use '../styles/blocks/content.scss';
+@use '../styles/blocks/detail.scss';
+@use '../styles/blocks/form.scss';
+@use '../styles/blocks/header.scss';
+@use '../styles/blocks/lead.scss';
+@use '../styles/blocks/menu.scss';
+@use '../styles/blocks/navigaction.scss';
+@use '../styles/blocks/title.scss';
+@use '../styles/blocks/footer.scss';
+@use '../styles/blocks/image.scss';
 
 body {
-  background: black;
-  color: white;
+  background: $color-bg;
+  font-family: Poppins, Arial, sans-serif;
+  color: $color_white;
 }
