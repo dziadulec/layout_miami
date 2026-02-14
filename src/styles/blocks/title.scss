@@ -1,35 +1,45 @@
+@use '../utils/vars.scss' as *;
 
-.title{
-font-family: Poppins;
-font-weight: 700;
-font-style: Bold;
-font-size: 36px;
-line-height: 100%;
-letter-spacing: -1.5px;
-text-align: center;
-vertical-align: middle;
-box-sizing: border-box;
-padding-bottom: 100px;
+.title {
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+  text-align: center;
 
-&__second{
-font-family: Poppins;
-font-weight: 500;
-font-style: Medium;
-font-size: 32px;
-padding-top: 60px;
-}
+  &__main {
+    padding-bottom: 88px;
+  }
 
-
+  &__section {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 92px;
+    padding-bottom: 48px;
+  }
 }
 
 @media screen and (min-width: 744px) {
-  .title{
-    font-size: 64px;
+  .title {
+    &__main {
+      padding-bottom: 130px;
+    }
+
+    &__section {
+      font-size: $font-lead-tablet;
+    }
   }
 }
 
 @media screen and (min-width: 1260px) {
-  .title{
-    font-size: 80px;
+  .title {
+    font-size: $font-lead-desktop;
+
+    &__main {
+      padding-bottom: 203px;
+    }
   }
 }
