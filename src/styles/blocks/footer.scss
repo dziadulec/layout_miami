@@ -1,0 +1,9 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media screen and (min-width: 744px) {
+    padding-right: 20%;
+  }
+}
