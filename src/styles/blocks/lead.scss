@@ -35,8 +35,14 @@
 
 @media screen and (min-width: 1260px) {
   .lead {
+    grid-template-columns: repeat(6, 1fr);
     &__title {
       font-size: $font-lead-desktop;
+      grid-column: span 2;
+    }
+
+    &__text {
+      grid-column: span 3;
     }
   }
 }
