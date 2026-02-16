@@ -16,7 +16,6 @@
 @use '../styles/blocks/footer.scss';
 @use '../styles/blocks/image.scss';
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -25,4 +24,8 @@ body {
   background: $color_black;
   font-family: Poppins, Arial, sans-serif;
   color: $color_white;
+}
+
+.page__body--with-menu {
+  overflow: hidden;
 }
