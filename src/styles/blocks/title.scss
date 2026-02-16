@@ -26,6 +26,7 @@
   .title {
     &__main {
       padding-bottom: 130px;
+      font-size: $font-title-tablet;
     }
 
     &__section {
@@ -36,10 +37,11 @@
 
 @media screen and (min-width: 1260px) {
   .title {
-    font-size: $font-lead-desktop;
+
 
     &__main {
-      padding-bottom: 203px;
+      padding-bottom: 210px;
+      font-size: $font-title-desktop;
     }
   }
 }
