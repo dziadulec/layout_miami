@@ -152,7 +152,7 @@
       <footer class="footer" id="footer">
         <h3 class="title title__section">Contact us</h3>
         <div class="contact">
-          <form class="form">
+          <form class="form" id ="contact-form">
             <label class="form__label" for="name">Name</label>
             <input
               class="form__input"
@@ -178,6 +178,24 @@
               ></textarea>
             <button class="button button--form" type="submit">Send</button>
           </form>
+          <script>
+            const form = document.getElementById('contact-form');
+
+            form.addEventListener('submit', function(event) {
+              event.preventDefault();
+              console.log("The form was sent!");
+
+              form.reset();
+            });
+
+            window.addEventListener('hashchange',() => {
+              if (window.location.hash === '#menu') {
+                document.body.classList.add('page__body--with-menu');
+              } else {
+                document.body.classList.remove('page__body--with-menu');
+              }
+            });
+          </script>
           <address class="address">
             <p class="address__text">
               Phone:
